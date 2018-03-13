@@ -10,9 +10,3 @@ int my_isneg(int n)
 		write(1,&neg,1);
 	return 0;
 }
-
-int main()
-{
-	my_isneg(-1);
-		return 0;
-}

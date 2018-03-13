@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-int my_print_comb(void)
+int my_print_comb2(void)
 {
 	int m = 0;
 	int n = 0;
@@ -10,7 +10,6 @@ int my_print_comb(void)
 	char d = '0';
 	char div = ' ';
 	char div2 = ',';
-	
 	while(m <= 99)
 	{
 		while(n <= 99)
@@ -34,11 +33,5 @@ int my_print_comb(void)
 		n = m;
 		m++;
 	}
-	return 0;
-}
-
-int main()
-{
-	my_print_comb();
 	return 0;
 }

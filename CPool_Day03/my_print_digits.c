@@ -10,9 +10,3 @@ int my_print_digits(void)
 	}	
 	return 0;
 }
-
-int main()
-{
-	my_print_digits();
-		return 0;
-}
