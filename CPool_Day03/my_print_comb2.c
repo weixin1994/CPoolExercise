@@ -26,7 +26,8 @@ int my_print_comb(void)
 				write(1,&div,1);
 				write(1,&c,1);
 				write(1,&d,1);
-				write(1,&div2,1);			
+				if(m != 98)
+					write(1,&div2,1);			
 			}	
 			n++;
 		}

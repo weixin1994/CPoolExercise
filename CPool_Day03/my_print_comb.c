@@ -14,15 +14,14 @@ int my_print_comb(void)
 		k = n % 10;
 		if(i != j && j != k && k > j && j > i)
 		{
-			if(n > 1)
-				write(1,&div,1);
 			char a = i + '0';
 			char b = j + '0';
 			char c = k + '0';
 			write(1,&a,1);
 			write(1,&b,1);
 			write(1,&c,1);
-			
+			if(n != 789)
+				write(1,&div,1);
 		}
 		n++;
 	}
