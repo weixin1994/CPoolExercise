@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "my_print_digits.h"
-int main()
+int main(void)
 {
 	my_print_digits();
 	return 0;

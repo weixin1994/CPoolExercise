@@ -1,4 +1,4 @@
-#ifndef MY_PRINT_DIGITS
-#define MY_PRINT_DIGITS
+#ifndef MY_PRINT_DIGITS_H
+#define MY_PRINT_DIGITS_H
 int my_print_digits(void);
-#endif /* MY_PRINT_DIGITS */
+#endif

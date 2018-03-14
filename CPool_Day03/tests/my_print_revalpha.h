@@ -1,4 +1,4 @@
-#ifndef MY_PRINT_REVALPHA
-#define MY_PRINT_REVALPHA
+#ifndef MY_PRINT_REVALPHA_H
+#define MY_PRINT_REVALPHA_H
 int my_print_revalpha(void);
-#endif /* MY_PRINT_REVALPHA */
+#endif

@@ -1,4 +1,4 @@
-#ifndef MY_PRINT_COMB
-#define MY_PRINT_COMB
+#ifndef MY_PRINT_COMB_H
+#define MY_PRINT_COMB_H
 int my_print_comb(void);
-#endif /* MY_PRINT_COMB */
+#endif

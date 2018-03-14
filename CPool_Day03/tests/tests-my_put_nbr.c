@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "my_put_nbr.h"
-int main()
+int main(void)
 {
 	my_put_nbr(42);
 	my_put_nbr(0);

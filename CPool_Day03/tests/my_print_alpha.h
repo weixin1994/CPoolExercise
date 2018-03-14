@@ -1,4 +1,4 @@
-#ifndef MY_PRINT_ALPHA
-#define MY_PRINT_ALPHA
+#ifndef MY_PRINT_ALPHA_H
+#define MY_PRINT_ALPHA_H
 int my_print_alpha(void);
-#endif /* MY_PRINT_ALPHA */
+#endif
