@@ -113,7 +113,7 @@ int my_getnbr(char const *str)
 
 int main()
 {
-	char *str = "+++------+--44432323232323343345++3+--";
+	char *str = "--44+-45++3+--";
 	//char *str = "-a++42";
 	my_getnbr(str);
 	return 0;
