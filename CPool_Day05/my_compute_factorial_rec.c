@@ -14,5 +14,6 @@ int my_compute_factorial_rec(int nb)
 int main(void) 
 { 
 	printf("%d",my_compute_factorial_rec(-5));
+	printf("%d",my_compute_factorial_rec(5));
 	return 0;
 }
