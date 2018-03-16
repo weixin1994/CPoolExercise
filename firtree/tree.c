@@ -54,8 +54,7 @@ void tree(int size)
 			space_count--;
 	}
 	for(int i = 2;i <= size;i++)
-		my_print_echelon(i,bot/2);
-	
+		my_print_echelon(i,bot/2);	
 	pipe_size = size;
 	if(size % 2 == 0)
 		pipe_size = size + 1;
@@ -67,10 +66,9 @@ void tree(int size)
 			my_putchar(pipe);
 		my_putchar('\n');
 	}
-	
 }	
 int main(void)
 {
-	tree(8);
+	tree(7);
 	return 0;
 }
