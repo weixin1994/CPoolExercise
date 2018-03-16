@@ -12,13 +12,9 @@ void my_print_echelon(int n,int max_space)
 	{
 		real_space--;
 	for(j = 0;j <= real_space;j++)
-	{
 		my_putchar(space);
-	}
 	for(k = 0;k < top;k++)
-	{
 		my_putchar(star);
-	}
 	top = top + 2;
 	my_putchar('\n');
 	}
