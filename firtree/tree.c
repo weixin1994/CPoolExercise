@@ -42,33 +42,40 @@ void tree(int size)
 	char star = '*';
 	char space = ' ';
 	char pipe = '|';
-	bot = cal_max(size);
-	space_count = bot/2;
-	for(i = 1;i <= ini;i++)
+	char tips = 'F';
+	if(size == 0)
+		my_putchar(tips);
+	else
 	{
-		for(j = 0;j < space_count;j++)
-			my_putchar(space);
-		for(k = 0;k < 2 * i - 1;k++)
-			my_putchar(star);
-		my_putchar('\n');
+		bot = cal_max(size);
+		space_count = bot/2;
+		for(i = 1;i <= ini;i++)
+		{
+			for(j = 0;j < space_count;j++)
+				my_putchar(space);
+			for(k = 0;k < 2 * i - 1;k++)
+				my_putchar(star);
+			my_putchar('\n');
 			space_count--;
+		}
+		for(int i = 2;i <= size;i++)
+			my_print_echelon(i,bot/2);	
+		pipe_size = size;
+		if(size % 2 == 0)
+			pipe_size = size + 1;
+		for(int i = 0;i < size;i++)
+		{
+			for(int i = 0;i < bot/2-size/2;i++)
+				my_putchar(space);
+			for(int j = 0;j < pipe_size;j++)
+				my_putchar(pipe);
+			my_putchar('\n');
+		}
 	}
-	for(int i = 2;i <= size;i++)
-		my_print_echelon(i,bot/2);	
-	pipe_size = size;
-	if(size % 2 == 0)
-		pipe_size = size + 1;
-	for(int i = 0;i < size;i++)
-	{
-		for(int i = 0;i < bot/2-size/2;i++)
-			my_putchar(space);
-		for(int j = 0;j < pipe_size;j++)
-			my_putchar(pipe);
-		my_putchar('\n');
-	}
+	
 }	
 int main(void)
 {
-	tree(7);
+	tree(5);
 	return 0;
 }
