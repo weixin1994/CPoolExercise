@@ -4,9 +4,8 @@ void my_print_echelon(int n,int max_space)
 {
 	char star = '*';
 	char space = ' ';
-	int hight,top,count,real_space,i,j,k;
+	int hight,top,real_space,i,j,k;
 	hight = n + 3;
-	count = hight;
 	top = n * n + n - 1;
 	real_space = max_space - top/2;
 	for(i = 0;i < hight;i++)
@@ -26,13 +25,11 @@ void my_print_echelon(int n,int max_space)
 }
 void tree(int size)
 {
-	int i,j,k,top,bot,space_count,pipe_size;
+	int i,j,k,bot,space_count,pipe_size;
 	int ini = 4 ;
 	char star = '*';
 	char space = ' ';
 	char pipe = '|';
-	int n = 1;
-	top = n * n + n - 1;
 	bot = size * size + size * 3 + 3;
 	space_count = bot/2;
 	for(i = 1;i <= ini;i++)
