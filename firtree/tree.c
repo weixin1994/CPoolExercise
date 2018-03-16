@@ -2,6 +2,8 @@
 int my_putchar(char c);
 void my_print_echelon(int n,int max_space)
 {
+	char star = '*';
+	char space = ' ';
 	int hight,top,count,i,j,k;
 	hight = n + 3;
 	count = hight;
@@ -11,14 +13,14 @@ void my_print_echelon(int n,int max_space)
 		max_space--;
 	for(j = 0;j < max_space;j++)
 	{
-		printf(" ");
+		my_putchar(space);
 	}
 	for(k = 0;k < top;k++)
 	{
-		printf("*");
+		my_putchar(star);
 	}
 	top = top + 2;
-	printf("\n");
+	my_putchar('\n');
 	}
 }
 void tree(int size)
