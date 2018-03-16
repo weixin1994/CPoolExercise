@@ -69,7 +69,6 @@ void tree(int size)
 			my_putchar('\n');
 		}
 	}
-	
 }	
 int main(void)
 {
