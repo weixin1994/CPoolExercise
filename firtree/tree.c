@@ -42,10 +42,7 @@ void tree(int size)
 	char star = '*';
 	char space = ' ';
 	char pipe = '|';
-	char tips = 'F';
-	if(size == 0)
-		my_putchar(tips);
-	else
+	if(size != 0)
 	{
 		bot = cal_max(size);
 		space_count = bot/2;
