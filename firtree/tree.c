@@ -1,12 +1,28 @@
 #include <stdio.h>
 int my_putchar(char c);
+int cal_max(int size)
+{
+	int max;
+	if(size < 1)
+		max = 0;
+	if(size == 1)
+		max = 7;
+	else
+	{
+		int i = size / 2;
+		max = cal_max(size - 1) + (size + 2 - i) * 2;
+	}
+	return max;
+}
+
 void my_print_echelon(int n,int max_space)
 {
 	char star = '*';
 	char space = ' ';
-	int hight,top,real_space,i,j,k;
+	int hight,top,bot,real_space,i,j,k;
 	hight = n + 3;
-	top = n * n + n - 1;
+	bot = cal_max(n);
+	top = bot - (n + 2) * 2;
 	real_space = max_space - top/2;
 	for(i = 0;i < hight;i++)
 	{
@@ -26,7 +42,7 @@ void tree(int size)
 	char star = '*';
 	char space = ' ';
 	char pipe = '|';
-	bot = size * size + size * 3 + 3;
+	bot = cal_max(size);
 	space_count = bot/2;
 	for(i = 1;i <= ini;i++)
 	{
@@ -55,6 +71,6 @@ void tree(int size)
 }	
 int main(void)
 {
-	tree(6);
+	tree(8);
 	return 0;
 }
