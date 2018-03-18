@@ -3,9 +3,9 @@
 void colle(int lie,int hang)
 {	
 	int i,j;
-	char slash = '/';
-	char star = '*';
-	char rev_slash = '\\';
+	char slash = 'A';
+	char star = 'B';
+	char rev_slash = 'C';
 	char space = ' ';
 	char ret = '\n';
 
@@ -76,6 +76,6 @@ void colle(int lie,int hang)
 }
 int main(void)
 {
-	colle(1,5);
+	colle(5,3);
 	return 0;
 }
