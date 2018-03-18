@@ -76,6 +76,6 @@ void colle(int lie,int hang)
 }
 int main(void)
 {
-	colle(1,5);
+	colle(4,4);
 	return 0;
 }

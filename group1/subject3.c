@@ -27,7 +27,7 @@ void colle(int lie,int hang)
 					continue;
 				}
 					
-				if(i == hang && j == lie)
+				if(i == 1 && j == lie)
 				{
 					write(1,&slash,1);
 					continue;
@@ -39,7 +39,7 @@ void colle(int lie,int hang)
 					continue;
 				}
 					
-				if(i == 1 && j == lie)
+				if(i == hang && j == lie)
 				{
 					write(1,&rev_slash,1);
 					continue;
