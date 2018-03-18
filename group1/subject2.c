@@ -10,7 +10,11 @@ void colle(int lie,int hang)
 	char ret = '\n';
 
 	if(hang == 1 && lie == 1)
+	{
 		write(1,&star,1);
+		write(1,&ret,1);
+	}
+		
 	if(hang != 1 && lie != 1)
 	{
 		for(i = 1;i <= hang;i++)
@@ -57,6 +61,7 @@ void colle(int lie,int hang)
 		{
 			for(int i = 1;i <= lie;i++)
 				write(1,&star,1);
+				write(1,&ret,1);
 		}
 		if(lie == 1 && hang > 1)
 		{
