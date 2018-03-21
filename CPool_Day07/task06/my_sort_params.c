@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 	{
 		for(int j = 0;j < argc-1-i;j++)
 		{
-			if(my_strcmp(argv[j],argv[j+1]))
+			if(my_strcmp(argv[j],argv[j+1]) > 0)
 			{
 				my_strcpy(temp,argv[j+1]);
 				my_strcpy(argv[j+1],argv[j]);
